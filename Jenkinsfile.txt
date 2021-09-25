@@ -1,7 +1,7 @@
 pipline {
     agent {label 'slave'}
     stages {
-        stage('Test') {
+        stage('echo') {
             steps {
                 echo 'test!!'
             }
