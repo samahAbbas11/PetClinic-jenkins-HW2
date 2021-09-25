@@ -8,5 +8,13 @@ pipeline {
 		}
             }
         }
+        stage('build') {
+            steps {
+		script{
+		"cd spring-petclinic"
+		"./mvnw package"
+		}
+            }
+        }
     }
 }
