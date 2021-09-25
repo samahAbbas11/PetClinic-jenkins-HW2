@@ -3,19 +3,8 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-               script {
-		git clone https://github.com/spring-projects/spring-petclinic.git
-               }
+		git clone https://github.com/spring-projects/spring-petclinic.git 
             }
         }
-        stage('build') {
-            steps {
-          	script {
-		 cd spring-petclinic
-		./mvnw package
-               }
-            }
-        }
-
     }
 }
